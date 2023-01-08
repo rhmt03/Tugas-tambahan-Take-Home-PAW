@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;800&display=swap');
+.atas{
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter' sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size:90px;
+    height:90%;
+}
+.bawah{
+    margin: 0;
+    height: 5vh;
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.atas,.bawah{
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+}
+.kotak_kanan,.kotak_kiri{
+	grid-template-columns: repeat(2,1fr);
+	display: grid;
+}
+.kotak_kanan{
+    background-color: black; 
+} 
+.kotak_kiri{
+    background-color: grey;
+} 
+.angka_kanan{
+    top: 33%;
+    left:68%;
+    position: fixed;   
+}
+.angka_kiri{
+    top: 33%;
+    left:15%;
+    position: fixed;
+}
+.bawah>.nama1>.orang{
+	grid-template-columns: 7% 93%;
+    display: grid;
+}    
+.bawah>.nama2>.orang{
+    grid-template-columns: 93% 7%;
+    display: grid;    
+}
+.nama1>.orang>.ciri{
+    padding: 5px;
+    color: black;
+    background-color: yellow;
+    text-align: center;
+}
+.nama1>.orang>.nama{
+    padding: 5px;
+    text-align: left;
+    color: white;
+    background-color:black;
+}
+.nama2>.orang>.nama{
+    padding: 5px;
+    background-color: yellow;
+    text-align: center;
+}
+.nama2>.orang>.ciri{
+    padding: 5px;
+    color: white;
+    text-align: right;
+    background-color: grey;
+}
+@media(max-width:700px){
+    .atas{
+        height: 93%;
+        font-size: 50px;       
+    }
+    .bawah{
+    	font-size: 10px;
+    }
+    .kanan{
+        left:70%;
+        top: 40%;
+    }
+    .kiri{
+        left:16%;
+        top: 40%;
+    }
+    .bawah>.nama1>.orang{
+        grid-template-columns: 16% 90%;
+        display: grid;
+    }
+    .bawah>.nama2>.orang{
+        grid-template-columns: 84% 16%;
+        display: grid;
+    }
+}
